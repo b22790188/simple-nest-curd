@@ -1,16 +1,16 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class todoEntity{
-    @PrimaryGeneratedColumn()
-    id: number;
+export class todoEntity {
+  @PrimaryGeneratedColumn()
+  id: number;
 
-    @Column()
-    task: string;
+  @Column()
+  task: string;
 
-    @Column()
-    deadline: Date;
+  @Column()
+  deadline: Date;
 
-    @Column()
-    completed: boolean;
+  @Column()
+  completed: boolean;
 }

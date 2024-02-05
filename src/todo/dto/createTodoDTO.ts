@@ -1,13 +1,12 @@
-import { IsBoolean, IsDate, IsString } from "class-validator";
+import { IsBoolean, IsDate, IsString } from 'class-validator';
 
-export class createTodoDto{
+export class createTodoDto {
+  @IsString()
+  task: string;
 
-    @IsString()
-    task: string;
+  @IsDate()
+  deadline: Date;
 
-    @IsDate()
-    deadline: Date;
-
-    @IsBoolean()
-    completed: boolean;
+  @IsBoolean()
+  completed: boolean;
 }
